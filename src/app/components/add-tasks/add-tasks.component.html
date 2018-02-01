@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">Add Task</span>
+    <form (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="input-field col-s6">
+          <input type="text" placeholder="Add Title" name="title" [(ngModel)]="task.title">
+        </div>
+        <div class="input-field col-s6">
+            <input type="text" placeholder="Add Description" name="description" [(ngModel)]="task.description">
+          </div>
+      </div>
+      <input type="submit" class="btn btn-light">
+    </form>
+  </div>
+</div>
